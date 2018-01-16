@@ -1,0 +1,23 @@
+{
+  "name": "codemix-firebase-functions",
+  "version": "1.0.0",
+  "description": "Should get some news for a topic via rss, and return it as lightened json",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha ./functions/tests/*-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spacerockzero/codemix-firebase-functions.git"
+  },
+  "author": "Jakob Anderson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spacerockzero/codemix-firebase-functions/issues"
+  },
+  "homepage": "https://github.com/spacerockzero/codemix-firebase-functions#readme",
+  "devDependencies": {
+    "mocha": "^4.1.0",
+    "nyc": "^11.4.1"
+  }
+}

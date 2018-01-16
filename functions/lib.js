@@ -18,12 +18,9 @@ const cleanObjects = objects => {
     // console.log('raw article:', item);
     const cleanObj = {
       title: item.title,
-      link: item.link
+      link: item.link,
+      categories: item.categories
     };
-    // from aggregator
-    if (item.categories) {
-      cleanObj.categories = item.categories;
-    }
     return cleanObj;
   });
   // console.log('objs:', objs);
