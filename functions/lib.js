@@ -15,7 +15,7 @@ const getFeed = jsync(topic => {
 
 const cleanObjects = objects => {
   const objs = objects.map(item => {
-    console.log('raw article:', item);
+    // console.log('raw article:', item);
     const cleanObj = {
       title: item.title,
       link: item.link
@@ -26,6 +26,7 @@ const cleanObjects = objects => {
     }
     return cleanObj;
   });
+  // console.log('objs:', objs);
   return objs;
 };
 
@@ -35,6 +36,8 @@ const getNews = jsync(topic => {
   // clean it up
   const cleanedContent = cleanObjects(content);
   // return filtered content as json
+  console.log('cleanedContent:', cleanedContent);
+
   return cleanedContent;
 });
 
